@@ -1,5 +1,0 @@
-/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/bin/Debug/DeliveryApp.dll
-/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/bin/Debug/DeliveryApp.pdb
-/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/obj/Debug/DeliveryApp.csproj.CoreCompileInputs.cache
-/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/obj/Debug/DeliveryApp.dll
-/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/obj/Debug/DeliveryApp.pdb
