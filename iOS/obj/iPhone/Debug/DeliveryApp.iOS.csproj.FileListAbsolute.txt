@@ -1,0 +1,15 @@
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Debug/DeliveryApp.iOS.exe
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Debug/DeliveryApp.iOS.pdb
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Debug/DeliveryApp.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Debug/DeliveryApp.pdb
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/device-builds/iphone8.4-13.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/device-builds/iphone8.4-13.3.1/actool/_PartialAppManifest.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/device-builds/iphone8.4-13.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/device-builds/iphone8.4-13.3.1/coremlc/_PartialAppManifest.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/device-builds/iphone8.4-13.3.1/coremlc/_BundleResourceWithLogicalName.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/device-builds/iphone8.4-13.3.1/optimized/
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/DeliveryApp.iOS.csprojAssemblyReference.cache
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/DeliveryApp.iOS.csproj.CoreCompileInputs.cache
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/DeliveryApp.iOS.csproj.CopyComplete
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/DeliveryApp.iOS.exe
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Debug/DeliveryApp.iOS.pdb

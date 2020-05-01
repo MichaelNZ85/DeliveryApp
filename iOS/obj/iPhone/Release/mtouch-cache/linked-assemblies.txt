@@ -1,0 +1,7 @@
+RemoveDynamicRegistrar:true
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Release/DeliveryApp.iOS.app:/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Release/mtouch-cache/1-Link/DeliveryApp.iOS.exe
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Release/DeliveryApp.iOS.app:/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Release/mtouch-cache/1-Link/mscorlib.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Release/DeliveryApp.iOS.app:/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Release/mtouch-cache/1-Link/Xamarin.iOS.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Release/DeliveryApp.iOS.app:/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Release/mtouch-cache/1-Link/System.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Release/DeliveryApp.iOS.app:/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Release/mtouch-cache/1-Link/System.Core.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhone/Release/DeliveryApp.iOS.app:/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhone/Release/mtouch-cache/1-Link/System.Net.Http.dll

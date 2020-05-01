@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2647">
+    <device id="retina6_5" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1201" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Pussword" misplaced="YES">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1202" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email" misplaced="YES">
+                                <rect key="frame" x="16" y="231" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1203" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="16" y="307" width="288" height="30"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" colorSpace="custom" customColorSpace="sRGB" red="0.352941176470588" green="0.784313725490196" blue="0.980392156862745" alpha="1"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1204" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="233" y="345" width="71" height="30"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <segue id="2365" destination="1450" kind="show" identifier="registerSegue"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1206" firstItem="1201" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="1207" firstItem="1201" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY"/>
+                            <constraint id="1208" firstItem="1201" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="1209" firstItem="1201" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="1211" firstItem="1202" firstAttribute="width" secondItem="1201" secondAttribute="width"/>
+                            <constraint id="1212" firstItem="1201" firstAttribute="top" secondItem="1202" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1213" firstItem="1202" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="1214" firstItem="1203" firstAttribute="width" secondItem="1201" secondAttribute="width"/>
+                            <constraint id="1216" firstItem="1203" firstAttribute="top" secondItem="1201" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1217" firstItem="1203" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="1218" firstItem="1204" firstAttribute="top" secondItem="1203" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1219" firstItem="1204" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="1202" id="name-outlet-1202"/>
+                        <outlet property="signInButton" destination="1203" id="name-outlet-1203"/>
+                        <outlet property="registerButton" destination="1204" id="name-outlet-1204"/>
+                    </connections>
+                    <navigationItem title="Login" id="2730" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="1449">
+            <objects>
+                <viewController id="1450" sceneMemberID="viewController" customClass="RegoViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1447"/>
+                        <viewControllerLayoutGuide type="bottom" id="1448"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1451">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1454" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" placeholder="Confirm Pussword">
+                                <rect key="frame" x="20" y="433" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1455" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" placeholder="Pussword">
+                                <rect key="frame" x="20" y="395" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1456" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" placeholder="Email address">
+                                <rect key="frame" x="20" y="357" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1478" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="471" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" colorSpace="custom" customColorSpace="sRGB" red="0.352941176470588" green="0.784313725490196" blue="0.980392156862745" alpha="1"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1457" firstItem="1454" firstAttribute="centerX" secondItem="1451" secondAttribute="centerX"/>
+                            <constraint id="1458" firstItem="1454" firstAttribute="centerY" secondItem="1451" secondAttribute="centerY"/>
+                            <constraint id="1460" firstItem="1454" firstAttribute="trailing" secondItem="1451" secondAttribute="trailingMargin"/>
+                            <constraint id="1464" firstItem="1455" firstAttribute="width" secondItem="1454" secondAttribute="width"/>
+                            <constraint id="1465" firstItem="1454" firstAttribute="top" secondItem="1455" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1466" firstItem="1455" firstAttribute="leading" secondItem="1451" secondAttribute="leadingMargin"/>
+                            <constraint id="1467" firstItem="1455" firstAttribute="trailing" secondItem="1451" secondAttribute="trailingMargin"/>
+                            <constraint id="1468" firstItem="1456" firstAttribute="width" secondItem="1454" secondAttribute="width"/>
+                            <constraint id="1469" firstItem="1455" firstAttribute="top" secondItem="1456" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1470" firstItem="1456" firstAttribute="leading" secondItem="1451" secondAttribute="leadingMargin"/>
+                            <constraint id="1471" firstItem="1456" firstAttribute="trailing" secondItem="1451" secondAttribute="trailingMargin"/>
+                            <constraint id="1479" firstItem="1478" firstAttribute="top" secondItem="1454" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1480" firstItem="1478" firstAttribute="leading" secondItem="1451" secondAttribute="leadingMargin"/>
+                            <constraint id="1481" firstItem="1478" firstAttribute="trailing" secondItem="1451" secondAttribute="trailingMargin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="1454" id="name-outlet-1454"/>
+                        <outlet property="emailTextField" destination="1456" id="name-outlet-1456"/>
+                        <outlet property="passwordTextField" destination="1455" id="name-outlet-1455"/>
+                        <outlet property="regoButton" destination="1478" id="name-outlet-1478"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1452" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="1"/>
+        </scene>
+        <scene sceneID="2646">
+            <objects>
+                <navigationController id="2647" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2649">
+                        <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="2731" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2650" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520" y="13"/>
+        </scene>
+    </scenes>
+</document>

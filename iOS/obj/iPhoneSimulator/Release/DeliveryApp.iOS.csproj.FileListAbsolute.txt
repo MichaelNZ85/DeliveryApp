@@ -1,0 +1,13 @@
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhoneSimulator/Release/DeliveryApp.iOS.exe
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhoneSimulator/Release/DeliveryApp.iOS.pdb
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/bin/iPhoneSimulator/Release/DeliveryApp.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/actool/_PartialAppManifest.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/actool/_BundleResourceWithLogicalName.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/coremlc/_PartialAppManifest.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/coremlc/_BundleResourceWithLogicalName.items
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/optimized/
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/DeliveryApp.iOS.csproj.CoreCompileInputs.cache
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/DeliveryApp.iOS.csproj.CopyComplete
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/DeliveryApp.iOS.exe
+/Users/spinningcubesolutions/Projects/DeliveryApp/iOS/obj/iPhoneSimulator/Release/DeliveryApp.iOS.pdb

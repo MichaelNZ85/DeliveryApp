@@ -1,0 +1,4 @@
+Button;obj/Release/res/layout/main.xml
+LinearLayout;obj/Release/res/layout/main.xml
+resources;obj/Release/res/values/strings.xml
+string;obj/Release/res/values/strings.xml

@@ -1,0 +1,3 @@
+/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/bin/Release/DeliveryApp.dll
+/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/obj/Release/DeliveryApp.csproj.CoreCompileInputs.cache
+/Users/spinningcubesolutions/Projects/DeliveryApp/DeliveryApp/obj/Release/DeliveryApp.dll
