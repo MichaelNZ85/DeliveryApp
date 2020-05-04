@@ -1,29 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
+    android:layout_height="match_parent">
     <EditText
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/emailEditText" />
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/regoEmailEditText"
+        android:hint="Email" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/passwordEditText" />
-    <Button
-        android:text="Sign In"
+        android:id="@+id/regoPasswordEditText"
+        android:hint="Pussword" />
+    <EditText
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signInButton" />
+        android:id="@+id/regoConfirmPassword"
+        android:hint="Confurrm Pussword" />
     <Button
         android:text="Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/regoButton" />
+        android:id="@+id/regoUserButton" />
+
 </LinearLayout>
