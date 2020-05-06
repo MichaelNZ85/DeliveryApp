@@ -2,13 +2,14 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
-//using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace DeliveryApp.Droid
 {
     [Activity(Label = "DeliveryApp", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://spinningcubedeliveryapp.azurewebsites.net");
 
         EditText emailEditText,passwordEditText;
         Button signInButton, regoButton;
