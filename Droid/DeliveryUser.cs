@@ -18,5 +18,13 @@ namespace DeliveryApp.Droid
         public string Email { get; set; }
         public string Password { get; set; }
 
+        //test code only
+        public override string ToString()
+        {
+            return $"User ID: {Id}\nUser Email: {Email}";
+        }
+
     }
+
+    
 }
