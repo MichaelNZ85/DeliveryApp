@@ -10,14 +10,14 @@ using System.CodeDom.Compiler;
 
 namespace DeliveryApp.iOS
 {
-    [Register ("ViewController")]
+    [Register("ViewController")]
     partial class ViewController
     {
         [Outlet]
         UIKit.UIButton Button { get; set; }
 
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
+        [GeneratedCode("iOS Designer", "1.0")]
         UIKit.UITextField emailTextField { get; set; }
 
         [Outlet]
@@ -25,17 +25,18 @@ namespace DeliveryApp.iOS
         UIKit.UITextField passwordTextField { get; set; }
 
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
+        [GeneratedCode("iOS Designer", "1.0")]
         UIKit.UIButton registerButton { get; set; }
 
         [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
+        [GeneratedCode("iOS Designer", "1.0")]
         UIKit.UIButton signInButton { get; set; }
 
-        void ReleaseDesignerOutlets ()
+        void ReleaseDesignerOutlets()
         {
-            if (emailTextField != null) {
-                emailTextField.Dispose ();
+            if (emailTextField != null)
+            {
+                emailTextField.Dispose();
                 emailTextField = null;
             }
 
@@ -45,13 +46,15 @@ namespace DeliveryApp.iOS
                 passwordTextField = null;
             }
 
-            if (registerButton != null) {
-                registerButton.Dispose ();
+            if (registerButton != null)
+            {
+                registerButton.Dispose();
                 registerButton = null;
             }
 
-            if (signInButton != null) {
-                signInButton.Dispose ();
+            if (signInButton != null)
+            {
+                signInButton.Dispose();
                 signInButton = null;
             }
         }

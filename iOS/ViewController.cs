@@ -32,17 +32,18 @@ namespace DeliveryApp.iOS
             }
             else
             {
-                var user = (await AppDelegate.MobileService.GetTable<DeliveryUser>().Where(u => u.Email == email).ToListAsync()).FirstOrDefault();
-                if (user.Password == password)
-                {
-                    alert = UIAlertController.Create("Success!", "Welcome to the Delivery App", UIAlertControllerStyle.Alert);
-                    alert.AddAction(UIAlertAction.Create("Fair Dinkum", UIAlertActionStyle.Default, null));
-                }
-                else
-                {
-                    alert = UIAlertController.Create("Bloody hell!", "You got the feckin password wrong", UIAlertControllerStyle.Alert);
-                    alert.AddAction(UIAlertAction.Create("Feck Off", UIAlertActionStyle.Default, null));
-                }
+                    var user = (await AppDelegate.MobileService.GetTable<DeliveryUser>().Where(u => u.Email == email).ToListAsync()).FirstOrDefault();
+                    if (user.Password == password)
+                    {
+                        alert = UIAlertController.Create("Success!", "Welcome to the Delivery App", UIAlertControllerStyle.Alert);
+                        alert.AddAction(UIAlertAction.Create("Fair Dinkum", UIAlertActionStyle.Default, null));
+                    }
+                    else
+                    {
+                        alert = UIAlertController.Create("Bloody hell!", "You got the feckin password wrong", UIAlertControllerStyle.Alert);
+                        alert.AddAction(UIAlertAction.Create("Feck Off", UIAlertActionStyle.Default, null));
+                    }
+                    PresentViewController(alert, true, null);
             }
             
         }
