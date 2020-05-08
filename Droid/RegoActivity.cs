@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace DeliveryApp.Droid
 {
-    [Activity(Label = "RegoActivity", Theme = "@android:style/Theme.Black.Fullscreen")]
+    [Activity(Label = "RegoActivity")]
     public class RegoActivity : Activity
     {
         EditText emailEditText, passwordEditText, confirmPasswordEditText;

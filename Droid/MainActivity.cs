@@ -7,7 +7,7 @@ using System;
 
 namespace DeliveryApp.Droid
 {
-    [Activity(Label = "DeliveryApp", MainLauncher = true, Icon = "@mipmap/icon", Theme="@android:style/Theme.Black.Fullscreen")]
+    [Activity(Label = "DeliveryApp", MainLauncher = true, Icon = "@mipmap/icon")]
 
     public class MainActivity : Activity
     {
