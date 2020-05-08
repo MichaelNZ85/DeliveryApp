@@ -63,6 +63,7 @@
                         <outlet property="emailTextField" destination="1202" id="name-outlet-1202"/>
                         <outlet property="signInButton" destination="1203" id="name-outlet-1203"/>
                         <outlet property="registerButton" destination="1204" id="name-outlet-1204"/>
+                        <outlet property="passwordTextField" destination="1201" id="name-outlet-1201"/>
                     </connections>
                     <navigationItem title="Login" id="2730" key="navigationItem"/>
                 </viewController>
