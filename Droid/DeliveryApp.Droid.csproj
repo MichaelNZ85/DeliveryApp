@@ -66,7 +66,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeliveryUser.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RegoActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

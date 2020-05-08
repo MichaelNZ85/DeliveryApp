@@ -1,3 +1,4 @@
+using DeliveryApp.Model;
 using Foundation;
 using System;
 using UIKit;
@@ -21,42 +22,19 @@ namespace DeliveryApp.iOS
 
         private async void RegoButton_TouchUpInside(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(passwordTextField.Text))
+            UIAlertController alert = null;
+            var result = await DeliveryUser.Register(emailTextField.Text, passwordTextField.Text, confirmPasswordTextField.Text);
+            if (result)
             {
-                if (passwordTextField.Text == confirmPasswordTextField.Text)
-                {
-                    var deliveryUser = new DeliveryUser()
-                    {
-                        Email = emailTextField.Text,
-                        Password = passwordTextField.Text
-                    };
-                    try
-                    {
-                        await AppDelegate.MobileService.GetTable<DeliveryUser>().InsertAsync(deliveryUser);
-                        var alert = UIAlertController.Create("Success", "User inserted successfully", UIAlertControllerStyle.Alert);
-                        alert.AddAction(UIAlertAction.Create("Okay", UIAlertActionStyle.Default, null));
-                        PresentViewController(alert, true, null);
-                        return;
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine("ERROR: SOMETHING WENT WRONG WITH THE AZURE CONNECTION");
-                        Console.WriteLine("-------------------------------------------------------");
-                        Console.WriteLine($"Exception message: {ex.Message}");
-                        Console.WriteLine($"Stack Trace: {ex.StackTrace}");
-                        if (ex.InnerException != null)
-                        {
-                            Console.WriteLine($"Inner Exception: { ex.InnerException.Message}");
-                        }
-                        Console.WriteLine("END OF ERROR REPORTING");
-                        //Toast.MakeText(this, $"Error occurred: {ex.Message}", ToastLength.Long).Show();
-                    }
-                    //Toast.MakeText(this, "Success", ToastLength.Long).Show();
-                }
+                 alert = UIAlertController.Create("Success", "User successfully registered", UIAlertControllerStyle.Alert);
 
-                //Toast.MakeText(this, "Passwords do not match", ToastLength.Long).Show(); ;
             }
-            //Toast.MakeText(this, "Password cannot be empty", ToastLength.Long).Show(); ;
+            else
+            {
+                alert = UIAlertController.Create("Failure", "Registration failed", UIAlertControllerStyle.Alert);                
+            }
+            alert.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+            PresentViewController(alert, true, null);
         }
     }
 }

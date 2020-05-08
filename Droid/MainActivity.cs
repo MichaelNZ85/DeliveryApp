@@ -5,6 +5,7 @@ using Android.Content;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Linq;
+using DeliveryApp.Model;
 
 namespace DeliveryApp.Droid
 {
@@ -12,7 +13,7 @@ namespace DeliveryApp.Droid
 
     public class MainActivity : Activity
     {
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://deliveriesapp-bigpurrrs.azurewebsites.net");
+        
 
         EditText emailEditText,passwordEditText;
         Button signInButton, regoButton;
@@ -43,26 +44,12 @@ namespace DeliveryApp.Droid
             var email = emailEditText.Text;
             var password = passwordEditText.Text;
 
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
-                Toast.MakeText(this, "Email and/or password is empty", ToastLength.Long).Show();
-            else
-            {
-                try
-                {
-                    var user = (await MobileService.GetTable<DeliveryUser>().Where(u => u.Email == email).ToListAsync()).FirstOrDefault();
-                
-                if (user.Password == password)
-                    Toast.MakeText(this, "Login successful", ToastLength.Long).Show();
-                else
-                    Toast.MakeText(this, "Incorrect password", ToastLength.Long).Show();
+            var result = await DeliveryUser.Login(email, password);
 
-                }
-                catch (Exception exx)
-                {
-                    Console.WriteLine(exx.Message);
-                    Toast.MakeText(this, "Error getting user details", ToastLength.Long).Show();
-                }
-            }
+            if (result)
+                Toast.MakeText(this, "Login successful", ToastLength.Long).Show();
+            else
+                Toast.MakeText(this, "Ur password is FAIL! Entry are denied!", ToastLength.Long).Show();
 
         }
 
