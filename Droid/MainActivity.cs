@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Content;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
+using System.Linq;
 
 namespace DeliveryApp.Droid
 {
@@ -15,7 +16,6 @@ namespace DeliveryApp.Droid
 
         EditText emailEditText,passwordEditText;
         Button signInButton, regoButton;
-        Button testButton;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,7 +28,6 @@ namespace DeliveryApp.Droid
 
             signInButton.Click += SignInButton_Click;
             regoButton.Click += RegoButton_Click;
-            testButton.Click += TestButton_Click;
 
         }
 
@@ -39,33 +38,35 @@ namespace DeliveryApp.Droid
             StartActivity(intent);
         }
 
-        private void SignInButton_Click(object sender, System.EventArgs e)
+        private async void SignInButton_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            var email = emailEditText.Text;
+            var password = passwordEditText.Text;
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+                Toast.MakeText(this, "Email and/or password is empty", ToastLength.Long).Show();
+            else
+            {
+                try
+                {
+                    var user = (await MobileService.GetTable<DeliveryUser>().Where(u => u.Email == email).ToListAsync()).FirstOrDefault();
+                
+                if (user.Password == password)
+                    Toast.MakeText(this, "Login successful", ToastLength.Long).Show();
+                else
+                    Toast.MakeText(this, "Incorrect password", ToastLength.Long).Show();
+
+                }
+                catch (Exception exx)
+                {
+                    Console.WriteLine(exx.Message);
+                    Toast.MakeText(this, "Error getting user details", ToastLength.Long).Show();
+                }
+            }
+
         }
 
-        private async void TestButton_Click(object sender, System.EventArgs ea)
-        {
-            try
-            {
-                var bigpurrs = await MobileService.GetTable<DeliveryUser>().ToListAsync();
-                foreach (DeliveryUser del in bigpurrs)
-                    Console.WriteLine(del);
-            } 
-            catch(Exception ex)
-            {
-                Console.WriteLine("ERROR: SOMETHING WENT WRONG ACCESSING THE AZURE CONNECTION");
-                Console.WriteLine("-------------------------------------------------------");
-                Console.WriteLine($"Exception message: {ex.Message}");
-                Console.WriteLine($"Stack Trace: {ex.StackTrace}");
-                if (ex.InnerException != null)
-                {
-                    Console.WriteLine($"Inner Exception: { ex.InnerException.Message}");
-                }
-                Console.WriteLine("END OF ERROR REPORTING. SO LONG SUCKERS!");
-                Toast.MakeText(this, $"Error occurred: {ex.Message}", ToastLength.Long).Show();
-            }
-        }
+        
     }
 }
 

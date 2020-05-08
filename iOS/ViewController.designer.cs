@@ -21,6 +21,10 @@ namespace DeliveryApp.iOS
         UIKit.UITextField emailTextField { get; set; }
 
         [Outlet]
+        [GeneratedCode("iOS Designer", "1.0")]
+        UIKit.UITextField passwordTextField { get; set; }
+
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton registerButton { get; set; }
 
@@ -33,6 +37,12 @@ namespace DeliveryApp.iOS
             if (emailTextField != null) {
                 emailTextField.Dispose ();
                 emailTextField = null;
+            }
+
+            if (passwordTextField != null)
+            {
+                passwordTextField.Dispose();
+                passwordTextField = null;
             }
 
             if (registerButton != null) {
