@@ -8,7 +8,7 @@ namespace DeliveryApp.iOS
     {
         public string emailAddress;
 
-        public static 
+
         
         public RegoViewController (IntPtr handle) : base (handle)
         {

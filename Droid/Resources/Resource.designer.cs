@@ -15,7 +15,7 @@ namespace DeliveryApp.Droid
 {
 	
 	
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -44,32 +44,29 @@ namespace DeliveryApp.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int emailEditText = 2131034112;
+			// aapt resource value: 0x7F010000
+			public const int emailEditText = 2130771968;
 			
-			// aapt resource value: 0x7f050001
-			public const int passwordEditText = 2131034113;
+			// aapt resource value: 0x7F010001
+			public const int passwordEditText = 2130771969;
 			
-			// aapt resource value: 0x7f050003
-			public const int regoButton = 2131034115;
+			// aapt resource value: 0x7F010002
+			public const int regoButton = 2130771970;
 			
-			// aapt resource value: 0x7f050007
-			public const int regoConfirmPassword = 2131034119;
+			// aapt resource value: 0x7F010003
+			public const int regoConfirmPassword = 2130771971;
 			
-			// aapt resource value: 0x7f050005
-			public const int regoEmailEditText = 2131034117;
+			// aapt resource value: 0x7F010004
+			public const int regoEmailEditText = 2130771972;
 			
-			// aapt resource value: 0x7f050006
-			public const int regoPasswordEditText = 2131034118;
+			// aapt resource value: 0x7F010005
+			public const int regoPasswordEditText = 2130771973;
 			
-			// aapt resource value: 0x7f050008
-			public const int regoUserButton = 2131034120;
+			// aapt resource value: 0x7F010006
+			public const int regoUserButton = 2130771974;
 			
-			// aapt resource value: 0x7f050002
-			public const int signInButton = 2131034114;
-			
-			// aapt resource value: 0x7f050004
-			public const int testButton = 2131034116;
+			// aapt resource value: 0x7F010007
+			public const int signInButton = 2130771975;
 			
 			static Id()
 			{
@@ -84,11 +81,11 @@ namespace DeliveryApp.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			// aapt resource value: 0x7F020000
+			public const int Main = 2130837504;
 			
-			// aapt resource value: 0x7f030001
-			public const int Register = 2130903041;
+			// aapt resource value: 0x7F020001
+			public const int Register = 2130837505;
 			
 			static Layout()
 			{
@@ -103,8 +100,8 @@ namespace DeliveryApp.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			// aapt resource value: 0x7F030000
+			public const int Icon = 2130903040;
 			
 			static Mipmap()
 			{
@@ -119,11 +116,11 @@ namespace DeliveryApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7F040000
+			public const int app_name = 2130968576;
 			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7F040001
+			public const int hello = 2130968577;
 			
 			static String()
 			{
