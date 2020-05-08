@@ -7,8 +7,6 @@ namespace DeliveryApp.iOS
     public partial class RegoViewController : UIViewController
     {
         public string emailAddress;
-
-        public static 
         
         public RegoViewController (IntPtr handle) : base (handle)
         {
