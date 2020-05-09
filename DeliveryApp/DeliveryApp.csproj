@@ -28,6 +28,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Model\AzureHelper.cs" />
+    <Compile Include="Model\Delivery.cs" />
+    <Compile Include="Model\DeliveryPerson.cs" />
     <Compile Include="Model\DeliveryUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
